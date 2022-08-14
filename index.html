@@ -1,0 +1,65 @@
+
+<html>
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Courgette&family=Edu+TAS+Beginner&family=Inter&family=Italianno&family=Montserrat+Alternates:ital,wght@1,500&family=Noto+Sans:ital@1&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="./css/all.min.css">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+   
+<div class="container">
+   <div class="row">
+      <div class="col-md-12">
+         <div class="w-75 m-auto">
+            <h1 class="my-4">Product Sails</h1>
+      
+            <label for="productNameInput">productName : </label>
+            <input type="text" oninput="productNameValidate()" class="form-control mb-3" id="productNameInput">
+      
+            <label for="productPriceInput">productPrice : </label>
+            <input type="number" oninput="productPriceValidate()" class="form-control mb-3" id="productPriceInput">
+      
+            <label for="productCategoryInput">productCategory : </label>
+            <input type="text" oninput="productCategoryValidate()" class="form-control mb-2" id="productCategoryInput">
+      
+            <label for="productDescInput">productDescription : </label>
+            <input type="text" oninput="productDescValidator()" class="form-control mb-2" id="productDescInput">
+      
+            <button onclick="addProduct();" id="addBtn" class=" btn btn-info"> add Product</button>
+            <button onclick="addUpdate()" id="updateBtn" class=" btn d-none btn-success">update</button>       
+         </div>
+      </div>
+      <div class="col-md-12 my-5">
+        <div class="w-75 mx-auto">
+    <input type="text" id="search" class="form-control rounded" placeholder="Search By Name....." oninput="searchProducts(search.value) ">
+         </div>
+   
+         <table class="table mx-auto mt-5">
+            <thead>
+               <th> #index</th>
+               <th>productName</th>
+               <th>productPrice</th>
+               <th>productCategory</th>
+               <th>productDescription</th>
+               <th>Update</th>
+               <th>Delete</th>
+            </thead>
+            <tbody id="tableBody">
+              
+            </tbody>
+          </table>
+      </div>
+   </div>
+</div>
+   
+
+
+
+   <script src="js/bootstrap.bundle.min.js"></script>
+   <script src="js/main.js"></script>
+</body>
+</html>

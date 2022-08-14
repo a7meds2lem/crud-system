@@ -1,0 +1,21 @@
+body{
+   background-color: rgb(233, 227, 227);
+   font-family: 'Courgette', cursive;
+font-family: 'Edu TAS Beginner', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Italianno', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Noto Sans', sans-serif;
+}
+
+.table{
+    width: 75%;
+}
+
+
+
+@media screen and (max-width:1000) {
+     .table{
+        width: 10% !important;
+     }
+}
