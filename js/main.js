@@ -44,41 +44,7 @@ $("#delete").click(function(){
   )
 })
 
-//    add products                                 important
-// function addProduct(){
-//     if(productNameValidate() == true ){
-//         var product = {
-//             name:productNameInput.value,
-//             price:productPriceInput.value,
-//             category:productCategoryInput.value,
-//             desc:productDescInput.value,
-//         }
-//         // done()
-//         productContainer.push(product);
-//         // console.log(productContainer);
-//         localStorage.setItem('myProduct',JSON.stringify(productContainer));
-//         clearProduct();
-//         displayProduct(productContainer);
-//     }
-// }
 
-//    add products                                 important
-// function addProduct(){
-//     if(productNameValidate() == true ){
-//         var product = {
-//             name:productNameInput.value,
-//             price:productPriceInput.value,
-//             category:productCategoryInput.value,
-//             desc:productDescInput.value,
-//         }
-//         // done()
-//         productContainer.push(product);
-//         // console.log(productContainer);
-//         localStorage.setItem('myProduct',JSON.stringify(productContainer));
-//         clearProduct();
-//         displayProduct(productContainer);
-//     }
-// }
 
 function addProduct(){
     if(  productNameValidate() == true && productCategoryValidate()==true && productDescValidator()==true && productPriceValidate()==true){
