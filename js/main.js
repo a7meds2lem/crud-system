@@ -18,6 +18,49 @@ else{
     productContainer=[];
 }
 
+$('#addBtn').click(function(){
+  addProduct();
+  Swal.fire(
+    'Add Product',
+    'Done',
+    'success'
+  )
+})
+
+$("#updateBtn").click(()=>{
+  addUpdate()
+  Swal.fire(
+    'Updated',
+    'Done',
+    'success'
+  )
+})
+
+$("#delete").click(function(){
+  Swal.fire(
+    'Deleted',
+    'Done',
+    'error'
+  )
+})
+
+//    add products                                 important
+// function addProduct(){
+//     if(productNameValidate() == true ){
+//         var product = {
+//             name:productNameInput.value,
+//             price:productPriceInput.value,
+//             category:productCategoryInput.value,
+//             desc:productDescInput.value,
+//         }
+//         // done()
+//         productContainer.push(product);
+//         // console.log(productContainer);
+//         localStorage.setItem('myProduct',JSON.stringify(productContainer));
+//         clearProduct();
+//         displayProduct(productContainer);
+//     }
+// }
 
 //    add products                                 important
 // function addProduct(){
@@ -76,8 +119,8 @@ function addProduct(){
         <th>${productList[i].price}</th>
         <th>${productList[i].category}</th>
         <th>${productList[i].desc}</th>
-        <th> <button onclick="updateProduct(${i})" class="btn btn-warning">Update</button></th>
-        <th> <button onclick="deleteProduct(${i})" class="btn btn-danger">Delete</button></th>
+        <th> <button onclick="updateProduct(${i})" class="btn btn-warning" id="updateBtn" >Update</button></th>
+        <th> <button onclick="deleteProduct(${i})" class="btn btn-danger" id="delete" >Delete</button></th>
         </tr>
         `
         }
